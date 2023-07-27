@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="logIn bg-primary-subtle d-flex justify-content-center align-items-center ">
+        <div class="container overflow-auto rounded-2">
+            <div class="row  border-4 border border-white">
+                <div class="col-md-6 bg-white py-5">
+                    <h2 class="mt-4 w-75 m-auto pt-2">Sign-Up Now!</h2>
+                    <h4 class="mb-5 w-75 m-auto fs-6 text-muted pt-2">Please enter your details</h4>
+                    <div class="d-flex flex-column w-75 mb-3 m-auto text-start">  
+                        <input type="text" name="name" id="nameId" placeholder="Enter your name" class="form-control mb-3">
+                        <input type="text" name="email" id="emailId" placeholder="Enter your email" class="form-control mb-3">
+                        <input type="password" name="password" id="passwordId" placeholder="Enter your password" class="form-control mb-4">
+                        <button class="btn signUpbtn fw-semibold btn-dark mb-2"><a href="#" class="text-decoration-none">Sign Up</a></button>
+                    </div>
+                    <h3 class="w-75 m-auto text-center mb-5 pb-3 text-muted">Have an account? <span><a href="index.html" class="text-decoration-none">Login</a></span></h3>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="img/su.webp" alt="" class="imgSignup">
+                </div>
+            </div>
+        </div>
+        <dialog id="emailError" class="w-25">
+            <div class="d-flex flex-row gap-2">
+                <i class="fa-solid fa-circle text-danger"></i>
+                <i class="fa-solid fa-circle text-warning"></i>
+                <i class="fa-solid fa-circle text-success"></i>  
+                <i id="closeEmailDialog" class="fa-solid fa-close ms-auto fs-3"></i>
+            </div>
+            <h2 class="fs-5 mb-2 p-4">This email is already registered!<br> <span class="fst-italic">Please try another Email</span></h2>
+        </dialog>
+        <dialog id="validateError" class="w-25" >
+            <div class="d-flex flex-row gap-2">
+                <i class="fa-solid fa-circle text-danger"></i>
+                <i class="fa-solid fa-circle text-warning"></i>
+                <i class="fa-solid fa-circle text-success"></i>  
+                <i id="validateDialog" class="fa-solid fa-close ms-auto fs-3"></i>
+            </div>
+            <h2 class="fs-5 mb-2">Username or Email or Password is not valid, Please follow the rules below :</h2>
+            <h5 class="fs-6">
+                <span>
+                    <i class="fa-solid fa-arrow-circle-right"></i>
+                </span>
+                Username must contain at least 3 characters and start with Capital character
+            </h5>
+            <h5 class="fs-6">
+                <span>
+                    <i class="fa-solid fa-arrow-circle-right"></i>
+                </span>
+                User Email must be a valid one <br> 
+                <span>
+                    <h5 class="fs-6">Like : anything10@gmail.com</h5>
+                </span>
+            </h5>
+            <h5 class="fs-6">
+                <span>
+                    <i class="fa-solid fa-arrow-circle-right"></i>
+                </span>
+                User Password must be a valid one <br> 
+                <span>
+                    <h5 class="fs-6">Like : Asd1020s_</h5>
+                </span>
+            </h5>
+            
+        </dialog>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>

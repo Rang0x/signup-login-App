@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="logIn bg-primary-subtle d-flex justify-content-center align-items-center ">
+        <div class="container overflow-auto rounded-3">
+            <div class="row border-4 border border-white">
+                <div class="col-md-6 bg-white py-5">
+                    <h2 class="mt-4 w-75 m-auto pt-2">Welcome Back!</h2>
+                    <h4 class="mb-4 w-75 m-auto fs-6 text-muted pt-2">Please enter your details</h4>
+                    <div class="d-flex flex-column w-75 m-auto text-start">
+                        <label for="email" class="my-1">Email</label>
+                        <input type="text" name="email" id="emailId" placeholder="Enter your email" class="form-control mb-3">
+                        <label for="pw" class="my-1">Password</label>
+                        <input type="password" name="password" id="passwordId" placeholder="Enter your password" class="form-control mb-3">
+                        <button class="btn fw-semibold btn-login mb-4"><a href="#" class="text-decoration-none">Login</a></button>
+                    </div>
+                    <h3 class="w-75 m-auto text-center mb-5 text-muted">Don't have an account? <span><a href="signup.html" class="text-decoration-none">SIGN UP</a></span></h3>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center py-5">
+                    <img src="img/li.webp" alt="" class="w-75 logInImg">
+                </div>
+            </div>
+        </div>
+        <dialog id="logInError" class="w-25">
+            <div class="d-flex flex-row gap-2">
+                <i class="fa-solid fa-circle text-danger"></i>
+                <i class="fa-solid fa-circle text-warning"></i>
+                <i class="fa-solid fa-circle text-success"></i>  
+                <i id="closeEmailDialog" class="fa-solid fa-close ms-auto fs-3"></i>
+            </div>
+            <h2 class="fs-5 mb-2 p-4">This email or password is wrong<br> <span class="fst-italic">Please try again!</span></h2>
+        </dialog>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
